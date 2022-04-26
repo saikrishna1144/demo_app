@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class DemoApplication {
 	@GetMapping("/message")
     public String message() {
-    	return("demo application");
+    	return("demo application second commit");
     }
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
