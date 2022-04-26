@@ -11,8 +11,15 @@ public class DemoApplication {
 	@GetMapping("/message")
     public String message() {
            log.debug("Hello this is a debug message");  
-	      log.info("Hello this is an info message"); 
+	       log.info("Hello this is an info message"); 
+	       log.error("error message");
     	return("demo application second commit");}
+	@GetMapping("/reply")
+    public String reply() {
+           log.debug("Hello this is a debug message in reply");  
+	       log.info("Hello this is an info message in reply"); 
+	       log.error("error message in reply");
+    	return("this is reply....");}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
